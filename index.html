@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+	
+	
+	<head>
+		<!-- Comentario. Caracteres proibídos: & < > -->
+		<meta charset="UTF-8"/>
+		<title> ~~ Aula 01 - Introdução ~~ </title>
+		
+		<style type="text/css">
+		
+			h1{
+				color: pink;
+			}
+			h2{
+				color: cyan;
+			}
+			p{
+				color: blue;
+			}
+			p:nth-of-type(2){
+
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<h1 id="principal">Jouy-en-Josas</h1>
+		
+			<h2>Origem: Wikipédia, a enciclopédia livre.</h2>
+			
+		<p><b>Jouy-en-Josas</b> é uma comuna francesa, situada a 19 km a sudoeste de Paris, no departamento de Yvelines, região de Île-de-France.</p>
+		<p>Em Jouy-en-Josas estão instalados a prestigiosa <i>Écoles des hautes études Commerciales</i> (HEC Paris) e o <i>Institut national de la recherche agronomique</i> (INRA), o principal centro de pesquisas agrícolas da Europa.</p>
+		<p>Jouy-en-Josas situa-se a 4 km a sudeste de Versalhes e a 19 km a sudoeste de Paris, no vale do rio Bièvre, que, até 1912, quando teve seu curso desviado, era afluente do Sena.</p>
+		<p>Quase a metade do território de Jouy, cerca de 500 hectares, é coberta de bosques. As comunas limítrofes são Vélizy-Villacoublay a nordeste, Bièvres (Essonne) a leste, Saclay (Essonne) ao sul, Toussus-le-Noble ao extremo sudoeste, Les Loges-en-Josas a oeste, Buc a noroeste e Versailles a nor-noroeste.</p>
+		<p>A cidade é ligada a Versailles pela Linha C do RER de Île-de-France. A comuna conta com duas gares: Jouy-en-Josas e Petit Jouy - Les Loges - esta última situada entre as comunas de Jouy-en-Josas e Les Loges-en-Josas.</p>
+		
+		<script type="text/javascript">
+			
+			<!-- var x = 1;  -->
+			<!-- var y = "frança"; -->
+			<!-- var z = y+x; -->
+			<!-- var w = [0,1,2,3,4,"paris",x] -->
+			<!-- console.log(w); -->
+			
+			<!-- function pintar(evt){ -->
+				<!-- var x = evt.x; -->
+				<!-- var w = window.innerWidth; -->
+				<!-- var tela = document.body; -->
+				<!-- var r = ~~(x/w * 256); -->
+				<!-- var g = 0; -->
+				<!-- var b = 0; -->
+				<!-- tela.style.background = "rgb("+r+","+g+"%,"+b+"%)"; -->
+			<!-- } -->
+			
+			function pintarTitulo(evt){
+				var x = evt.x;
+				var w = window.innerWidth;
+				var tela = document.getElementById("principal");
+				var h = ~~(x/w * 360);
+				var s = 100;
+				var l = 50;
+				tela.style.color = "hsl("+h+","+s+"%,"+l+"%)";
+			}
+			
+			window.addEventListener("mousemove",pintarTitulo);
+			
+		</script>
+	</body>
+	
+</html>
